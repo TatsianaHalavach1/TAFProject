@@ -1,0 +1,25 @@
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\TAFProject.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\TAFProject.pdb
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\nunit.framework.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\WebDriver.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\nunit.framework.xml
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\WebDriver.xml
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\obj\Debug\TAFProject.csprojResolveAssemblyReference.cache
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\obj\Debug\TAFProject.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\obj\Debug\TAFProject.pdb
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\WebDriver.Support.dll
+c:\users\aliaksandr_horski\documents\visual studio 2015\Projects\TAFProject\TAFProject\bin\Debug\WebDriver.Support.xml
+C:\data\visual\TAFProject\TAFProject\obj\Debug\TAFProject.csprojResolveAssemblyReference.cache
+C:\data\visual\TAFProject\TAFProject\obj\Debug\TAFProject.dll
+C:\data\visual\TAFProject\TAFProject\obj\Debug\TAFProject.pdb
+C:\data\visual\TAFProject\TAFProject\bin\Debug\TAFProject.dll.config
+C:\data\visual\TAFProject\TAFProject\bin\Debug\TAFProject.dll
+C:\data\visual\TAFProject\TAFProject\bin\Debug\TAFProject.pdb
+C:\data\visual\TAFProject\TAFProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\data\visual\TAFProject\TAFProject\bin\Debug\nunit.framework.dll
+C:\data\visual\TAFProject\TAFProject\bin\Debug\WebDriver.dll
+C:\data\visual\TAFProject\TAFProject\bin\Debug\WebDriver.Support.dll
+C:\data\visual\TAFProject\TAFProject\bin\Debug\nunit.framework.xml
+C:\data\visual\TAFProject\TAFProject\bin\Debug\WebDriver.xml
+C:\data\visual\TAFProject\TAFProject\bin\Debug\WebDriver.Support.xml
