@@ -17,7 +17,7 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 
 		public static string GetIssueNumber()
 		{
-			return newIssueNumber.Element.Text;
+			return newIssueNumber.Text;
 		}
 
 		public override void GoToPage()

@@ -5,7 +5,9 @@ namespace SeleniumForRedmine.UIUtils.Driver
 {
 	public class BaseTest
 	{
-        protected static Browser browser = Browser.Instance;
+        
+
+		protected static Browser browser = Browser.Instance;
 
 	    [OneTimeSetUp]
         public virtual void InitTest()

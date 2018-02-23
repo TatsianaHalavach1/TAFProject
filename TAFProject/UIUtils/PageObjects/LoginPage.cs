@@ -6,9 +6,16 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 	{
 		private const string BASE_URL = "http://icerow.com/";
 		
-		BaseElement loginForm = new BaseElement(By.Id("username"));
-		BaseElement passwordForm = new BaseElement(By.Id("password"));
-		BaseElement loginButton = new BaseElement(By.Name("login"));
+		BaseElement loginForm;
+		BaseElement passwordForm;
+		BaseElement loginButton;
+
+	    public LoginPage()
+	    {
+	        loginForm = new BaseElement(By.Id("username"));
+	        passwordForm = new BaseElement(By.Id("password"));
+	        loginButton = new BaseElement(By.Name("login"));
+        }
 
 		public override void GoToPage()
 		{

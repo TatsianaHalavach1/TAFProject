@@ -1,42 +1,63 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using System.Drawing;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils
 {
-	class BaseElement 
+	class BaseElement : IWebElement
 	{ 
-		Browser _browser = Browser.Instance;
+		readonly Browser browser = Browser.Instance;
+	    readonly IWebElement element;
+	    readonly By locator;
 
-		readonly By _locator;
-		public IWebElement Element => _browser.FindElement(_locator);
+	    public string Text => element.Text;
 
-		public BaseElement(By locator)
+        public string TagName => element.TagName;
+
+        public bool Enabled => element.Enabled;
+
+        public bool Selected => element.Selected;
+
+        public Point Location => element.Location;
+
+        public Size Size => element.Size;
+
+        public bool Displayed => element.Displayed;
+
+        public BaseElement(By locator)
 		{
-			_locator = locator;
-		}
+			this.locator = locator;
+		    element = browser.FindElement(locator);
+        }
 
-		public void SendKeys(string text) => Element.SendKeys(text);
-
-		public bool IsVisible() => Element.Displayed;
+		public void SendKeys(string text) => element.SendKeys(text);
 
 		public void Click()
 		{
-			new WebDriverWait(_browser.Driver, TimeSpan.FromSeconds(_browser.ImpWait)).Until(driver => driver.FindElement(_locator));
-			Element.Click();
+			new WebDriverWait(browser.Driver, TimeSpan.FromSeconds(browser.ImpWait)).Until(driver => driver.FindElement(locator));
+			element.Click();
 		}
 
 		public bool IsExist()
 		{
-			return Element != null;
+			return element != null;
 		}
+        
+		public void Clear() => element.Clear();
 
-		public string Text()
-		{
-			return Element.Text;
-		}
+        public void Submit() => element.Submit();
 
-		public void Clear() => Element.Clear();
-	}
+        public string GetAttribute(string attributeName) => element.GetAttribute(attributeName);
+
+	    public string GetProperty(string propertyName) => element.GetProperty(propertyName);
+
+	    public string GetCssValue(string propertyName) => element.GetCssValue(propertyName);
+
+	    public IWebElement FindElement(By by) => element.FindElement(by);
+
+        public ReadOnlyCollection<IWebElement> FindElements(By by) => element.FindElements(by);
+    }
 }

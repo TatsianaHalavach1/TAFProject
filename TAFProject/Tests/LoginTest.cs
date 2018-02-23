@@ -8,15 +8,14 @@ namespace TAFProject.Tests
 	[TestFixture]
 	class LoginTest: BaseTest
 	{
-		LoginPage loginPage = new LoginPage();
 		private string login = "TAT18";
 		private string password = "tat18pass";
-
-		[Test]
+	    
+        [Test]
 		public void CorrectLoginTest()
 		{
-			loginPage.GoToPage();
-			HomePage homepage = loginPage.Login(login, password);
+		    LoginPage loginPage = new LoginPage();
+            HomePage homepage = loginPage.Login(login, password);
 			Assert.True(homepage.GetLogin().Contains(login));
 			Thread.Sleep(5000);
 		}

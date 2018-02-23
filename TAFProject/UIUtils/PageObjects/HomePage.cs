@@ -10,7 +10,7 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 		public string GetLogin()
 		{
 			if (loginIdentifier.IsExist())
-				return loginIdentifier.Text();
+				return loginIdentifier.Text;
 			return "";
 		}
 
