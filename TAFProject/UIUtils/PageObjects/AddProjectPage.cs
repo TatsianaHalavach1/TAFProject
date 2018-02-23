@@ -22,12 +22,6 @@ namespace SeleniumForRedmine.UIUtils
 
 		private Browser browser;
 
-		public AddProjectPage(Browser browser)
-		{
-			this.browser = browser;
-			//PageFactory.InitElements(this.driver, this);
-		}
-
 		public override void GoToPage()
 		{
 			browser.GoToUrl(BASE_URL);

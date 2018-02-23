@@ -9,12 +9,6 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 		private Browser browser;
 		BaseElement loginIdentifier = new BaseElement(By.Id("loggedas"));
 
-		public HomePage(Browser browser)
-		{
-			this.browser = browser;
-			///PageFactory.InitElements(driver, this);
-		}
-
 		public string GetLogin()
 		{
 			if (loginIdentifier.IsExist())

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using SeleniumForRedmine.Utils;
 
@@ -17,12 +16,6 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 		readonly BaseElement newIssueCommitButton = new BaseElement(By.Name("commit"));
 		public static BaseElement newIssueNumber = new BaseElement(By.XPath("//*[@id=\"flash_notice\"]/a"));
 		private string createdIssueNumber = GetIssueNumber();
-
-		public AddIssuePage(Browser browser)
-		{
-			this.browser = browser;
-			///PageFactory.InitElements(driver, this);
-		}
 
 		public static string GetIssueNumber()
 		{

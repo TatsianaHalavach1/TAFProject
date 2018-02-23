@@ -9,7 +9,7 @@ namespace TAFProject.Tests
 	[TestFixture]
 	class LoginTest: BaseTest
 	{
-		LoginPage loginPage = new LoginPage(browser);
+		LoginPage loginPage = new LoginPage();
 		private string login = "TAT18";
 		private string password = "tat18pass";
 

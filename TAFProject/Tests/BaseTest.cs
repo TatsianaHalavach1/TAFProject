@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using SeleniumForRedmine.UIUtils.PageObjects;
 using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils.Driver
