@@ -1,13 +1,11 @@
 ﻿using OpenQA.Selenium;
-using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils.PageObjects
 {
 	public class LoginPage : BasePage
 	{
 		private const string BASE_URL = "http://icerow.com/";
-		private Browser browser = Browser.Instance;
-
+		
 		BaseElement loginForm = new BaseElement(By.Id("username"));
 		BaseElement passwordForm = new BaseElement(By.Id("password"));
 		BaseElement loginButton = new BaseElement(By.Name("login"));
@@ -24,7 +22,5 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 			loginButton.Click();
 			return new HomePage();
 		}
-
-
 	}
 }

@@ -2,14 +2,12 @@
 using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils.PageObjects
 {
 	class AddIssuePage : BasePage
 	{
 		private const string BASE_URL = "http://icerow.com/issues/";
-		private Browser browser;
 		private WebDriverWait wait;
 		readonly BaseElement newIssueButton = new BaseElement(By.XPath("//div[@class=\"contextual\"]/a"));
 		readonly BaseElement newIssueSubject = new BaseElement(By.Id("issue_subject"));

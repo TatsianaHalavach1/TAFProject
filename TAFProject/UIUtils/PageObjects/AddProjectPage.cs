@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils
 {
@@ -20,8 +19,6 @@ namespace SeleniumForRedmine.UIUtils
 
 		private BaseElement buttonCreate = new BaseElement(By.XPath("//input[@type='submit']"));
 
-		private Browser browser;
-
 		public override void GoToPage()
 		{
 			browser.GoToUrl(BASE_URL);
@@ -35,7 +32,5 @@ namespace SeleniumForRedmine.UIUtils
 			inputProjectDescription.SendKeys(homepage);
 			buttonCreate.Click();
 		}
-
-
 	}
 }

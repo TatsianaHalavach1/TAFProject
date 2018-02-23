@@ -5,8 +5,7 @@ using SeleniumForRedmine.Utils;
 
 namespace SeleniumForRedmine.UIUtils
 {
-	class BaseElement
-    //: WebElement
+	class BaseElement 
 	{ 
 		Browser _browser = Browser.Instance;
 

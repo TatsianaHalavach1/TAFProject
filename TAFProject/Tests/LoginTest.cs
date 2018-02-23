@@ -20,6 +20,5 @@ namespace TAFProject.Tests
 			Assert.True(homepage.GetLogin().Contains(login));
 			Thread.Sleep(5000);
 		}
-
 	}
 }
