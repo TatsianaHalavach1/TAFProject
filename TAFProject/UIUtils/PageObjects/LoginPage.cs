@@ -6,7 +6,7 @@ namespace SeleniumForRedmine.UIUtils.PageObjects
 	public class LoginPage : BasePage
 	{
 		private const string BASE_URL = "http://icerow.com/";
-		private Browser browser;
+		private Browser browser = Browser.Instance;
 
 		BaseElement loginForm = new BaseElement(By.Id("username"));
 		BaseElement passwordForm = new BaseElement(By.Id("password"));

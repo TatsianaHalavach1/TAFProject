@@ -1,6 +1,5 @@
 ﻿using System.Threading;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 using SeleniumForRedmine.UIUtils.Driver;
 using SeleniumForRedmine.UIUtils.PageObjects;
 

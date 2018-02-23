@@ -6,7 +6,6 @@ using OpenQA.Selenium.Firefox;
 namespace SeleniumForRedmine.UIUtils.Driver
 {
 	static class BrowserFactory
-	//driver.exe или NUget??
 	{
 		const int defaultTimeout = 5;
 		public enum BrowserType
